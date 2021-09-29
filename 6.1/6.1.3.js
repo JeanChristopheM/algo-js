@@ -1,19 +1,21 @@
-class Cat {
-    constructor(name) {
-        this.name = name;
-        this.greeting = "Miaou";
+class Animal {
+    constructor(john) {
+        this.name = john;
     }
     sayHello() {
         return `${this.greeting}! I'm ${this.name}!`;
     }
 }
-class Dog {
+class Cat extends Animal {
     constructor(name) {
-        this.name = name;
-        this.greeting = "Bark";
+        super(name, name);
+        this.greeting = "Miaou";
     }
-    sayHello() {
-        return `${this.greeting}! I'm ${this.name}!`;
+}
+class Dog extends Animal {
+    constructor(name) {
+        super(name, name);
+        this.greeting = "Bark";
     }
 }
 
