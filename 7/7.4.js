@@ -2,7 +2,7 @@
 const readlineSync = require("readline-sync");
 const fs = require('fs/promises');
 // specify the path to the file, and create a buffer with characters we want to write
-let path = './7/7.4.db.txt';
+let path = './7.4.db.txt';
 // App menu stored as string in the menu variable
 let menu = `Hello ! Welcome to the Pizza Flavors Manager.\n\nPlease choose your actions :\n\n1. List all the pizza flavors\n2. Add a new pizza flavor\n3. Remove a pizza flavor\n4. Exit this program\n\nEnter your action's number : `;
 
